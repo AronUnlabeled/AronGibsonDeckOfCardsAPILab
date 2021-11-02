@@ -1,0 +1,23 @@
+﻿@model DeckModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@if (Model.remaining < 5)
+{
+    <form method="post" asp-action="Reshuffle">
+        <input type="submit" value="Draw" />
+    </form>
+}
+else
+{
+    <form method="post" asp-action="DeckResult">
+        <input type="submit" value="Draw" />
+    </form>
+}

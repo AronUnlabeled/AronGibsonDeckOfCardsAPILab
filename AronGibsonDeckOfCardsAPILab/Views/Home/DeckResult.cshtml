@@ -1,0 +1,30 @@
+﻿@model DeckModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+@if (Model.remaining < 5)
+{
+    <form method="post" asp-action="Reshuffle">
+        <h1>All cards drawn deck must be reshuffled</h1>
+        <input type="submit" value="Reshuffle" />
+    </form>
+}
+else
+{
+    <form method="post" asp-action="DeckResult">
+        <input type="submit" value="Draw Again" />
+    </form>
+    @foreach (Card c in @Model.cards)
+    {
+        <h1>@c.value</h1>
+        <h1>of</h1>
+        <h1>@c.suit</h1>
+        <img src="@c.image" alt="Alternate Text" />
+    }
+}
+

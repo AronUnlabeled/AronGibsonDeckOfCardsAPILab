@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "B9RSXg/ulny/LcApnD9ddKZSmiFlRtI7YVxkiUh4tyQ3Otpjh/fq7sHyglkClAa4wYxYuei7KCAWw9TwdryZQw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aron\\source\\repos\\AronGibsonDeckOfCardsAPILab\\AronGibsonDeckOfCardsAPILab\\AronGibsonDeckOfCardsAPILab.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aron\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
